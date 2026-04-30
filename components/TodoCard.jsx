@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function TodoCard({ todo }) {
+export default function TodoCard({ todo, categories }) {
   return (
     <li key={todo.id} className="rounded-md border border-black-100 p-4">
       <Link href={`/todos/${todo.id}`}>
