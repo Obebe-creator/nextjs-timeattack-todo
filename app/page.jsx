@@ -1,7 +1,12 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="p-8">
-      <h1 className="text-2xl font-bold">Next.js 타임어택을 시작해보세요</h1>
-    </main>
+    <section className="mx-auto max-w-3xl px-6 py-16">
+      <div className="flex flex-col gap-6">
+        <h1 className="text-center text-3xl font-bold">Todo List Main</h1>
+      </div>
+      <Link href="/todos">Todo 목록보기</Link>
+    </section>
   );
 }
