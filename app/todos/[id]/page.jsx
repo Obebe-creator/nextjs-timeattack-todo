@@ -1,6 +1,8 @@
 import Link from "next/link";
 
-export default function TodoDetailpage({ params }) {
+export default async function TodoDetailpage({ params }) {
+  const { id } = await params;
+
   return (
     <div>
       <div>
