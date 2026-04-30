@@ -7,7 +7,7 @@ export default async function TodosPage() {
   );
 
   const todos = await res.json();
-  const categories = await categories.json();
+  const categories = await categoriesRes.json();
 
   return (
     <div>
